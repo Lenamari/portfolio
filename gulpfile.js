@@ -149,5 +149,7 @@ gulp.task('watch', ['fileinclude', 'style', 'javascript', 'fonts', 'images'], ()
 // Default task
 gulp.task('default', ['browserSync', 'watch'], () => {})
 
-// Build task
-gulp.task('build', ['clean', 'fileinclude', 'style', 'javascript', 'fonts', 'images'], () => {})
+gulp.task('build', ['fileinclude', 'style', 'javascript', 'fonts', 'images'], (done) => {
+  console.log('finish all');
+  done();
+})
