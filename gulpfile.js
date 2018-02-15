@@ -33,7 +33,7 @@ gulp.task('clean', () => {
 // CSS function : Handle Sass, autoprefix, minify, sourcemaps
 gulp.task('style', () => {
   gulp
-    .src(`${config.assets}/scss/*.scss`)
+    .src(`${config.assets}/scss/style.scss`)
     .pipe(plugin.plumber({
       errorHandler: plugin.notify.onError('SASS Error <%= error.message %>')
     }))

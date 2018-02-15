@@ -2,26 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Léna's portfolio</title>
+  <title>Léna Mari, UX/UI & Digital designer</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <script async src="js/app.min.js"></script>
 </head>
 <body>
-  @@include('views/header.html')
-  <div class="presentation">
-    Léna Mari — UI/UX Designer
+  <div class="container">
+    <header class="header">
+      <a href="" class="logo">Léna Mari</a>
+      <ul class="socials__list">
+        <li><a href="https://dribbble.com/Lenamari" target="_blank"><i class="icon-dribbble"></i></a></li>
+        <li><a href="https://www.behance.net/lenammari" target="_blank"><i class="icon-behance"></i></a></li>
+        <li><a href="https://twitter.com/mmari_lena" target="_blank"><i class="icon-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/lenamari/" target="_blank"><i class="icon-linkedin"></i></a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="column column--image">
+        <div>
+          <img src="img/lena-mari.jpg" alt="Photo de Léna Mari">
+        </div>
+      </div>
+      <div class="column column--text">
+        <h1><span>Léna Mari,</span><span>UX/UI & digital designer</span></h1>
+        <div class="description">
+            <p>I’m a 3rd year student at HETIC in Paris, France. 21 years old french girl and captivated by UI/UX and graphic design.</p>
+            <p>I’m currently looking for a 4 months internship from July 2018.</p>
+            <p>If you want to know more about me, <a href="https://www.behance.net/lenammari" target="_blank">check here</a>.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="presentation">
-    & Hetic student
-  </div>
-  <div class="presentation">
-    looking for a 4 months internship
-  </div>
-  <div class="presentation">
-    from July 2018.
-  </div>
-  @@include('views/footer.html')
+  <script async src="js/app.min.js"></script>
 </body>
 </html>

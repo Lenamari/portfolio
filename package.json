@@ -6,9 +6,9 @@
   "author": "Léna Mari",
   "license": "MIT",
   "private": null,
-  "scripts":{
-    "dev" :"gulp",
-    "build":"gulp clean && NODE_ENV=production gulp build"
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp clean && NODE_ENV=production gulp build"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

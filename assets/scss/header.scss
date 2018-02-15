@@ -1,22 +1,40 @@
 .header{
   display: flex;
-  padding: 20px 50px 20px 50px;
-
-  .logo{
-    width:10%;
-    img{
-      width: 100%;
-    }
-    }
-
-  ul{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  .logo {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .socials__list {
+    list-style: none;
     display: flex;
-    width:90%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    li{
-      margin-left: 25px;
+    li {
+      margin: 0px 15px;
+      font-size: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        i {
+          color:$light-black;
+          transition: color 0.3s;
+          will-change: color;
+        }
+      }
+      &:hover {
+        a {
+          i {
+            color:black;
+          }
+        }
+      }
     }
   }
 }

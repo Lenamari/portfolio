@@ -1,10 +1,94 @@
 @import 'reset.scss';
 @import 'font.scss';
+@import 'icons.scss';
+@import 'variables.scss';
 @import 'header.scss';
 
 
-
-body{
-  font-family: 'kepler';
-  font-weight: bold;
+html, body {
+  height: 100%;
+}
+body {
+  .container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+      width: 95%;
+    }
+    .content {
+      display: flex;
+      height: calc(100% - 100px);
+      @media screen and (max-width: 920px) {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0px;
+        align-items: center;
+      }
+    }
+    .column {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media screen and (max-width: 920px) {
+        width: 100%;
+        align-items: center;
+      }
+      &--image {
+        img {
+          width: 100%;  
+          height: auto;
+        }
+        transform: translateX(40px);
+        @media screen and (max-width: 920px) {
+          transform: translateX(0px);
+          img {
+            width:70vw;
+            max-width: 470px;
+          }
+        }
+      }
+      &--text {
+        position: relative;
+        z-index: 1;
+       
+        h1 {
+          font-family: $main-font;
+          font-size: 67px;
+          margin-bottom: 50px;
+          @media screen and (max-width: 920px) {
+            margin: 25px 0px;
+            width: 100%;
+          }
+          span {
+            display: block;
+          }
+        }
+        .description {
+          margin: 0 auto;
+          width: 70%;
+          @media screen and (max-width: 920px) {
+            width: 100%;
+          }
+          p {
+            font-family: $core-font;
+            color:$light-black;
+            font-size: 16px; 
+            line-height: 29px;
+            a {
+              text-decoration: underline;
+              transition: color 0.3s;
+              will-change: color;
+              &:hover {
+                color: black;
+              }
+            }
+          }
+        }
+        
+      }
+    }
+  }
 }
